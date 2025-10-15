@@ -1,0 +1,62 @@
+Dataset Description — Post-Quantum Cryptography Benchmarks (Extended Edition)
+Overview
+
+
+The Post-Quantum Cryptography (PQC) Benchmarks Dataset provides standardized performance and parameter metrics for major post-quantum cryptosystems, including both Key Encapsulation Mechanisms (KEMs) and Digital Signature (SIG) schemes.
+It enables comparative analysis across algorithm families, security levels, and implementation optimizations, supporting visualization, statistical modeling, and predictive performance estimation.
+
+This dataset was designed for data-driven analysis in cryptographic engineering, machine learning benchmarking, and educational visualization dashboards such as the PQC Visualization Dashboard built in Streamlit.
+
+Structure
+File name: pqc_benchmarks_extended.csv
+Format: Comma-separated values (CSV)
+Encoding: UTF-8
+Rows: 34
+Columns: 14
+
+
+
+| Column            | Type    | Description                                                                                  |
+| ----------------- | ------- | -------------------------------------------------------------------------------------------- |
+| `scheme`          | string  | Cryptosystem type — either `KEM` (Key Encapsulation Mechanism) or `SIG` (Digital Signature). |
+| `family`          | string  | Algorithm family (e.g., ML-KEM, ML-DSA, Falcon, SPHINCS+, Classic McEliece, BIKE, NTRU).     |
+| `category`        | string  | Underlying mathematical foundation (`lattice`, `hash`, `code`).                              |
+| `variant`         | string  | Specific parameter set or variant name (e.g., ML-KEM-512, Falcon-1024).                      |
+| `security_level`  | integer | NIST PQC security level (1–5).                                                               |
+| `impl`            | string  | Implementation type — `ref` (reference) or `opt` (optimized AVX2/NEON).                      |
+| `pk_bytes`        | integer | Public key size in bytes.                                                                    |
+| `sk_bytes`        | integer | Secret key size in bytes.                                                                    |
+| `ct_or_sig_bytes` | integer | Ciphertext size (for KEMs) or signature size (for SIGs) in bytes.                            |
+| `keygen_ms`       | float   | Average key generation time in milliseconds. (Only for KEMs.)                                |
+| `encap_ms`        | float   | Average encapsulation time in milliseconds. (Only for KEMs.)                                 |
+| `decap_ms`        | float   | Average decapsulation time in milliseconds. (Only for KEMs.)                                 |
+| `sign_ms`         | float   | Average signing time in milliseconds. (Only for SIGs.)                                       |
+| `verify_ms`       | float   | Average signature verification time in milliseconds. (Only for SIGs.)                        |
+
+
+
+Included Algorithm Families
+
+
+| Family               | Category | Description                                                        |
+| -------------------- | -------- | ------------------------------------------------------------------ |
+| **ML-KEM**           | Lattice  | Successor to CRYSTALS-Kyber; standard KEM recommended by NIST.     |
+| **Classic McEliece** | Code     | Code-based cryptosystem known for large keys but high security.    |
+| **ML-DSA**           | Lattice  | Successor to CRYSTALS-Dilithium; efficient post-quantum signature. |
+| **Falcon**           | Lattice  | Fast lattice-based signature scheme using NTRU lattices.           |
+| **SPHINCS+**         | Hash     | Stateless hash-based signature; conservative but slow.             |
+| **BIKE**             | Code     | Bit Flipping Key Encapsulation Mechanism; moderate key sizes.      |
+| **NTRU**             | Lattice  | Classic lattice-based encryption and signature scheme.             |
+
+
+
+
+Data Characteristics
+-Units: All timing values are measured in milliseconds (ms).
+-Optimizations:
+--ref represents baseline, unoptimized reference implementations.
+--opt represents optimized vectorized builds (e.g., AVX2 or NEON).
+-Completeness: Not all algorithms implement all metrics; irrelevant fields are left blank.
+-Realism: Sizes and relative timings are derived from NIST PQC reference parameters, liboqs benchmarks, and pqm4 microcontroller measurements.
+
+
