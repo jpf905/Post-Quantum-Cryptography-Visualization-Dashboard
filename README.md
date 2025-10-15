@@ -5,7 +5,9 @@ A data-driven Streamlit dashboard to explore performance, key sizes, and securit
 
 ## **Project Summary**
 This project delivers an interactive data-driven visualization of post-quantum cryptographic systems, combining advanced analytics with accessible design. Built in Streamlit, the dashboard allows users to explore the performance, key sizes, and security levels of next-generation encryption algorithms such as ML-KEM, ML-DSA, Falcon, SPHINCS+, McEliece, BIKE, and NTRU. Using a clean, structured dataset and machine learning regression models, the tool reveals how different cryptosystems balance efficiency and robustness across implementations and security levels. Ultimately, this project bridges data science and cybersecurity, providing a clear, visual framework for understanding the trade-offs shaping the future of quantum-resistant encryption.
+[![Post-Quantum Cryptography Visualization Dashboard]](https://youtu.be/jL0yL0gfF5I)
 
+https://youtu.be/jL0yL0gfF5I
 
 ## **Bring your own data**
 Replace `data/benchmarks.csv` with a CSV that has these columns (extra columns are fine):
