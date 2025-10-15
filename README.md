@@ -1,7 +1,7 @@
 # Post-Quantum Cryptography (PQC) Visualization Dashboard
 
 A data-driven Streamlit dashboard to explore performance, key sizes, and security levels of post-quantum cryptosystems (KEMs and Signatures). Includes simple ML models to predict performance from features.
-<img width="500" height="400" alt="Screen Shot 2025-10-14 at 8 21 47 PM" src="https://github.com/user-attachments/assets/f779a751-76d4-4004-a946-f27d8d018333" />
+<img width="600" height="500" alt="Screen Shot 2025-10-14 at 8 21 47 PM" src="https://github.com/user-attachments/assets/f779a751-76d4-4004-a946-f27d8d018333" />
 
 
 ## Project structure
