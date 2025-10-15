@@ -8,7 +8,7 @@ This project delivers an interactive data-driven visualization of post-quantum c
 
 [![Watch the video!]](https://youtu.be/jL0yL0gfF5I)
 
-https://youtu.be/jL0yL0gfF5I
+
 
 ## **Bring your own data**
 Replace `data/benchmarks.csv` with a CSV that has these columns (extra columns are fine):
