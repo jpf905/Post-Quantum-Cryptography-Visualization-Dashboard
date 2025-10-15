@@ -1,0 +1,33 @@
+scheme,family,category,variant,security_level,impl,pk_bytes,sk_bytes,ct_or_sig_bytes,keygen_ms,encap_ms,decap_ms,sign_ms,verify_ms
+KEM,ML-KEM,lattice,ML-KEM-512,1,ref,800,1632,768,0.35,0.45,0.4,,
+KEM,ML-KEM,lattice,ML-KEM-512,1,opt,800,1632,768,0.25,0.3,0.28,,
+KEM,ML-KEM,lattice,ML-KEM-768,3,ref,1184,2400,1088,0.4,0.6,0.55,,
+KEM,ML-KEM,lattice,ML-KEM-768,3,opt,1184,2400,1088,0.3,0.45,0.4,,
+KEM,ML-KEM,lattice,ML-KEM-1024,5,ref,1568,3168,1568,0.55,0.85,0.8,,
+KEM,ML-KEM,lattice,ML-KEM-1024,5,opt,1568,3168,1568,0.42,0.68,0.65,,
+KEM,Classic McEliece,code,McEliece348864,1,ref,261120,6492,96,6.2,0.8,0.78,,
+KEM,Classic McEliece,code,McEliece348864,1,opt,261120,6492,96,4.5,0.65,0.62,,
+KEM,Classic McEliece,code,McEliece460896,3,ref,524160,13568,156,7.5,1.15,1.1,,
+KEM,Classic McEliece,code,McEliece460896,3,opt,524160,13568,156,5.2,0.95,0.9,,
+KEM,Classic McEliece,code,McEliece6688128,5,ref,1048320,13892,208,12.3,1.7,1.65,,
+KEM,Classic McEliece,code,McEliece6688128,5,opt,1048320,13892,208,9.0,1.4,1.35,,
+SIG,ML-DSA,lattice,ML-DSA-44,2,ref,1312,2528,2420,,,,1.25,0.55
+SIG,ML-DSA,lattice,ML-DSA-44,2,opt,1312,2528,2420,,,,0.95,0.4
+SIG,ML-DSA,lattice,ML-DSA-65,3,ref,1952,4000,3293,,,,1.75,0.75
+SIG,ML-DSA,lattice,ML-DSA-65,3,opt,1952,4000,3293,,,,1.3,0.55
+SIG,ML-DSA,lattice,ML-DSA-87,5,ref,2592,4864,4595,,,,2.4,0.95
+SIG,ML-DSA,lattice,ML-DSA-87,5,opt,2592,4864,4595,,,,1.8,0.75
+SIG,Falcon,lattice,Falcon-512,1,ref,897,1281,666,,,,1.1,0.5
+SIG,Falcon,lattice,Falcon-512,1,opt,897,1281,666,,,,0.85,0.35
+SIG,Falcon,lattice,Falcon-1024,5,ref,1793,2305,1280,,,,2.0,0.9
+SIG,Falcon,lattice,Falcon-1024,5,opt,1793,2305,1280,,,,1.5,0.7
+SIG,SPHINCS+,hash,SPHINCS-SHA2-128s,1,ref,32,64,7856,,,,45.0,2.0
+SIG,SPHINCS+,hash,SPHINCS-SHA2-128s,1,opt,32,64,7856,,,,35.0,1.6
+SIG,SPHINCS+,hash,SPHINCS-SHA2-192s,3,ref,48,96,16224,,,,72.0,3.1
+SIG,SPHINCS+,hash,SPHINCS-SHA2-192s,3,opt,48,96,16224,,,,58.0,2.6
+SIG,SPHINCS+,hash,SPHINCS-SHA2-256s,5,ref,64,128,29792,,,,120.0,4.9
+SIG,SPHINCS+,hash,SPHINCS-SHA2-256s,5,opt,64,128,29792,,,,98.0,3.8
+SIG,BIKE,code,BIKE-1,1,ref,1540,1980,1540,,,,3.5,1.2
+SIG,BIKE,code,BIKE-1,1,opt,1540,1980,1540,,,,2.8,0.9
+SIG,NTRU,lattice,NTRU-HRSS-509,1,ref,699,935,699,,,,1.8,0.7
+SIG,NTRU,lattice,NTRU-HRSS-509,1,opt,699,935,699,,,,1.4,0.6
